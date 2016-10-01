@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <filter>
+  	<filter-name>charaterEncoding</filter-name>
+  	<filter-class>com.bdqn.news.filter.CharaterEncodingFilter</filter-class>
+  </filter>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>HelloServlet</servlet-name>
+    <servlet-class>HelloServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>admin</servlet-name>
+    <servlet-class>com.bdqn.news.servlet.admin</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>index</servlet-name>
+    <servlet-class>com.bdqn.news.servlet.index</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddNewsServelet</servlet-name>
+    <servlet-class>com.bdqn.news.servlet.AddNewsServelet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ContextServlet</servlet-name>
+    <servlet-class>com.bdqn.news.servlet.ContextServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>TopicServlet</servlet-name>
+    <servlet-class>com.bdqn.news.servlet.TopicServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddTopicServlet</servlet-name>
+    <servlet-class>com.bdqn.news.servlet.AddTopicServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ModifyTopicServlet</servlet-name>
+    <servlet-class>com.bdqn.news.servlet.ModifyTopicServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>test</servlet-name>
+    <servlet-class>com.bdqn.news.servlet.test</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+<filter-mapping>
+	<filter-name>charaterEncoding</filter-name>
+	<url-pattern>/*</url-pattern>
+</filter-mapping>
+  <servlet-mapping>
+    <servlet-name>HelloServlet</servlet-name>
+    <url-pattern>/helloservlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>admin</servlet-name>
+    <url-pattern>/servlet/admin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>index</servlet-name>
+    <url-pattern>/servlet/index</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddNewsServelet</servlet-name>
+    <url-pattern>/servlet/AddNewsServelet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ContextServlet</servlet-name>
+    <url-pattern>/servlet/ContextServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TopicServlet</servlet-name>
+    <url-pattern>/servlet/TopicServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddTopicServlet</servlet-name>
+    <url-pattern>/servlet/AddTopicServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ModifyTopicServlet</servlet-name>
+    <url-pattern>/servlet/ModifyTopicServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>test</servlet-name>
+    <url-pattern>/servlet/test</url-pattern>
+  </servlet-mapping>	
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

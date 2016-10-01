@@ -1,0 +1,4 @@
+#Wed Sep 14 21:54:20 CST 2016
+eclipse.preferences.version=1
+validator.Checked=WebRoot/context.jsp,WebRoot/news_add.jsp,WebRoot/topic_add.jsp
+validator.Unchecked=
