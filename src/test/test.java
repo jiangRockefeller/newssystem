@@ -3,6 +3,7 @@ package test;
 import com.bdqn.news.service.TopicService;
 import com.bdqn.news.service.impl.TopicServiceImpl;
 
+//this in my test
 public class test {
 	public static void main(String[] args) {
 		System.out.println("≤‚ ‘");
